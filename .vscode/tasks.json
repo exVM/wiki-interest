@@ -1,0 +1,9 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "uv sync", "type": "shell", "command": "uv sync", "problemMatcher": [] },
+    { "label": "tests", "type": "shell", "command": "uv run pytest -q", "group": { "kind": "test", "isDefault": true }, "problemMatcher": [] },
+    { "label": "demo: astronomy uk", "type": "shell",
+      "command": "uv run wt analyze --topic astronomy --langs uk,pl --months 36 --out wikitrend-out/demo", "problemMatcher": [] }
+  ]
+}

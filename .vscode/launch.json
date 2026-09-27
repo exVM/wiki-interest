@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "wt analyze (debug)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "wikitrend",
+      "args": ["analyze", "--topic", "astronomy", "--langs", "uk", "--months", "36", "--out", "wikitrend-out/debug"],
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONIOENCODING": "utf-8" }
+    }
+  ]
+}
